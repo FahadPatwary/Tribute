@@ -19,11 +19,10 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  background: rgb(53, 52, 52);
 }
 main {
-  background: rgb(53, 52, 52);
   display: flex;
-  height: 100vh;
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -43,4 +42,83 @@ main {
 .right__container .list {
   height: 80vh;
   padding-right: 20px;
+}
+hr {
+  margin-top: 20px;
+  visibility: hidden;
+}
+.me {
+  padding: 40px 0px;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 688px) {
+  main {
+    flex-direction: column;
+    align-content: center;
+    padding: 15px;
+  }
+
+  .left__container {
+    margin: 0;
+
+    width: calc(100vw-15px);
+    text-align: justify;
+  }
+  .right__container {
+    width: 100%;
+    margin: 0;
+    overflow: unset;
+    margin-top: 20px;
+  }
+  .right__container .list ul li {
+    list-style: none;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  main {
+    flex-direction: column;
+    align-content: center;
+    padding: 80px;
+  }
+  .left__container {
+    margin: 0;
+
+    width: calc(100vw-15px);
+    text-align: justify;
+  }
+  .right__container {
+    width: 100%;
+    margin: 0;
+    overflow: unset;
+    margin-top: 20px;
+  }
+  .right__container .list ul li {
+    list-style: none;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1368px) {
+  main {
+    flex-direction: column;
+    align-content: center;
+    padding: 80px;
+  }
+  .left__container {
+    margin: 0;
+
+    width: calc(100vw-15px);
+    text-align: justify;
+  }
+  .right__container {
+    width: 100%;
+    margin: 0;
+    overflow: unset;
+    margin-top: 20px;
+  }
+  .right__container .list ul li {
+    list-style: none;
+    text-align: center;
+  }
 }
